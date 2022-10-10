@@ -1,0 +1,136 @@
+.projects {
+
+	// padding: 100px 0 150px; pc
+	padding: 50px 0 75px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.what {
+			position: relative;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			// font-size: 44px; PC
+			font-size: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $textColor;
+			// margin-bottom: 150px;Pc
+			margin-bottom: 40px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				// top: -40px; PC
+				top: -20px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: block;
+				width: 100px;
+				height: 1px;
+				background: $textColor;
+
+			}
+		}
+
+		.projects__trade {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			// margin-bottom: 177px; PC
+			margin-bottom: 50px;
+		}
+
+		.projects__commerce {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+
+		.projects__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.projects-img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			margin-bottom: 20px;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.projects__description {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			// font-size: 22px; PC
+			font-size: 16px;
+			text-transform: uppercase;
+			color: $textColor;
+			margin-bottom: 17px;
+		}
+
+		.projects__title {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			text-align: center;
+			// font-size: 44px;PC
+			font-size: 30px;
+			text-transform: uppercase;
+			color: $textColor;
+			// margin-bottom: 40px; PC
+			margin-bottom: 20px;
+		}
+
+		.projects__subtitle {
+			font-family: 'Open Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			text-align: center;
+			// font-size: $baseFontSize;
+			font-size: 14px;
+			// line-height: 30px; PC
+			line-height: 20px;
+			color: $textColor;
+			// margin-bottom: 35px; PC
+			margin-bottom: 20px;
+		}
+
+		.projects__location {
+			display: flex;
+			align-items: center;
+
+
+			font-family: 'Open Sans', sans-serif;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 15px;
+			color: $blackColor;
+
+
+
+			svg {
+				width: 9px;
+				height: 15px;
+				fill: $textColor;
+				margin-right: 10px;
+
+			}
+		}
+
+	}
+
+}

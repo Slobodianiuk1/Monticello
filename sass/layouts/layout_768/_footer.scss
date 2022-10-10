@@ -1,0 +1,15 @@
+.footer {
+	padding: 203px 0 234px;
+
+	.container {
+		width: 800px;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.logo {
+			margin-bottom: 0px;
+		}
+	}
+
+}

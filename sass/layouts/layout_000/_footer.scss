@@ -1,0 +1,67 @@
+.footer {
+	background-image: url('../img/bg-footer.png'), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+	max-height: 549px;
+	// min-height: 549px; PC
+	padding: 180px 0 50px;
+	// padding: 203px 0 234px; PC
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.logo {
+			margin-bottom: 20px;
+
+			img {
+				margin: 0 0 40px 0;
+			}
+
+			p {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+				font-size: 14px;
+				color: $whiteColor;
+				text-align: center;
+			}
+		}
+
+		.social__list {
+			display: flex;
+
+			.social__item {
+				width: 40px;
+				height: 40px;
+				border-radius: 50px;
+				border: 1px solid $whiteColor;
+				margin-right: 20px;
+				cursor: pointer;
+
+				a {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				svg {
+					width: 16px;
+					height: 18px;
+					fill: $whiteColor;
+				}
+			}
+
+			.social__item:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+}

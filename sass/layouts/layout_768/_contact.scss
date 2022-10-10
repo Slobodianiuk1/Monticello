@@ -1,0 +1,51 @@
+.contacts {
+
+
+	.contact {
+		padding: 100px 60px 68px;
+		width: 770px;
+		align-items: stretch;
+
+		h4 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 44px;
+			text-align: center;
+			color: $textColor;
+			margin-bottom: 42px;
+
+			&::before {
+				content: '';
+				position: absolute;
+
+				top: 62px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: block;
+				width: 100px;
+				height: 1px;
+
+				background: $textColor;
+			}
+		}
+
+		.contact__box {
+			justify-content: space-between;
+			flex-direction: row;
+
+			.contact__list {
+				margin-bottom: 0;
+			}
+
+			.side {
+				max-width: 310px;
+
+				form {
+					justify-content: flex-end;
+					align-items: flex-end;
+				}
+			}
+		}
+	}
+}

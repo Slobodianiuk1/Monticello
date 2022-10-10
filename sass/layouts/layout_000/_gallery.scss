@@ -1,0 +1,96 @@
+.gallery {
+	padding: 50px 0 75px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.title {
+			font-family: 'Montserrat', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 44px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $textColor;
+			margin-bottom: 50px;
+			position: relative;
+
+			// margin-bottom: 100px;PC
+			&::before {
+				content: '';
+				position: absolute;
+				// top: -40px; PC
+				top: -10px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: block;
+				width: 100px;
+				height: 1px;
+				background: $textColor;
+			}
+		}
+
+		.gallery-grid {
+			grid-gap: 10px;
+			display: grid;
+			// grid-template-columns: 1fr 1fr 1fr 1fr;PC
+			grid-template-columns: 1fr 1fr;
+			position: relative;
+			max-width: 580px;
+			// margin-bottom: 60px; PC
+			margin-bottom: 30px;
+
+			.item {
+				position: relative;
+
+				img {
+					height: 100%;
+					left: 0;
+					object-fit: cover;
+
+					top: 0;
+					width: 100%;
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					width: 70px;
+					height: 70px;
+					background-image: url('../img/dandruff.svg');
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					background-repeat: no-repeat;
+					background-size: cover;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-position: center;
+					opacity: 0;
+					transition: opacity .4s ease;
+
+				}
+
+				&:hover:before {
+					opacity: 1;
+				}
+
+
+
+				&:first-child {
+					// grid-column: span 2;PC
+					// grid-row: span 2;PC
+					grid-column: span 2;
+					grid-row: span 2;
+				}
+			}
+		}
+
+		.btn {
+			margin-bottom: 0;
+		}
+	}
+}

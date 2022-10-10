@@ -1,0 +1,25 @@
+.gallery {
+	padding: 150px 0 192px;
+
+	.container {
+
+
+		.title {
+			margin-bottom: 100px;
+
+
+			&::before {
+				top: -42px;
+			}
+		}
+
+		.gallery-grid {
+
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			max-width: 1200px;
+			margin-bottom: 60px;
+
+
+		}
+	}
+}
