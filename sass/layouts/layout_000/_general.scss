@@ -9,19 +9,32 @@
   max-width: 1200px;
   padding: 0 18px;
   margin: 0 auto;
+
 }
 
-.page {
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  // grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
+html {
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+
+
+// .page {
+//   position: relative;
+//   overflow: hidden;
+//   display: grid;
+//   // grid-template-areas: "header" "main" "footer";
+//   grid-template-rows: 1fr auto;
+//   min-height: 100vh;
+// }
 
 body {
-  overflow-y: scroll;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  // overflow-y: scroll;
 }
 
 .visually-hidden {

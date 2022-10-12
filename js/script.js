@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	//  Меню 
 	const NAV = document.querySelector('.header');
 	const MENU_BUTTON = NAV.querySelector('.menu__burger');
-	const LINK = NAV.querySelectorAll('.menu__link');
 	const BACKING = NAV.querySelector('.black-backing');
 
 	MENU_BUTTON.addEventListener('click', function () {
@@ -24,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	//  Слайдер hero
 	$('.hero').slick({
-
-
 		autoplay: true,
 		draggable: false,
 		swipe: false,
@@ -34,34 +31,39 @@ document.addEventListener('DOMContentLoaded', function () {
 		autoplaySpeed: 4000,
 		speed: 700,
 		arrows: false,
-		mobileFirst: true,
 		dots: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					dots: false,
+				}
+			},
+
+		]
 	});
 	// Слайдер news
 	$('.news__cards').slick({
+
+		autoplay: true,
+		autoplaySpeed: 4000,
 		arrows: false,
 		infinite: true,
+		mobileFirst: true,
 		dots: true,
-		slidesToShow: 3,
-		autoplay: true,
-		speed: 1000,
-		autoplaySpeed: 4000,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					arrows: false,
-				}
-			},
-			{
-				breakpoint: 550,
-				settings: {
-					slidesToShow: 1,
-					arrows: false,
-				}
+		responsive: [{
+			breakpoint: 800,
+			settings: {
+				variableWidth: true,
 			}
-		]
+		}],
+		responsive: [{
+			breakpoint: 1200,
+			settings: {
+				arrows: true,
+				variableWidth: true,
+			}
+		}],
 	});
 	//  попап фотографий 
 	$('.image-popup').magnificPopup({
@@ -102,7 +104,7 @@ function initMap() {
 
 
 
-	// 
+	// Валидация формы
 
 	const form = document.forms["form"];
 	const formArr = Array.from(form);

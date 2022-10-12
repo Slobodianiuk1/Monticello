@@ -53,6 +53,9 @@
 			flex-direction: row;
 			align-items: stretch;
 			justify-content: space-between;
+			position: relative;
+
+
 
 			.projects__content {
 				padding: 70px 0 20px;
@@ -60,20 +63,19 @@
 			}
 
 			.projects-img {
+				position: relative;
 				order: 2;
-			}
 
-			.projects-img {
-				// &::after {
-				// 	content: '';
-				// 	position: absolute;
-				// 	right: -215px;
-				// 	top: -57px;
-				// 	width: 630px;
-				// 	height: 470px;
-				// 	background-color: #7E5AFF;
-				// 	z-index: -5000;
-				// }
+				&::before {
+					content: '';
+					position: absolute;
+					left: 215px;
+					top: -57px;
+					width: 630px;
+					height: 470px;
+					background-color: #7E5AFF;
+					z-index: -5;
+				}
 			}
 		}
 
