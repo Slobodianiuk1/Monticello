@@ -1,12 +1,15 @@
 .contacts {
+	display: flex;
+	flex-direction: column;
+
 	position: relative;
 }
 
 .contact {
-	position: absolute;
-	bottom: -150px;
-	left: 50%;
-	transform: translate(-50%);
+	position: relative;
+	// bottom: -150px;
+	// left: 50%;
+	// transform: translate(-50%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;

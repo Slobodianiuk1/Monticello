@@ -19,6 +19,7 @@
 			width: 180px;
 			height: 44px;
 			z-index: 200;
+			margin-right: 30px;
 		}
 
 		// !burger
@@ -117,7 +118,7 @@
 						text-transform: uppercase;
 						position: relative;
 						z-index: 4000;
-						transition: all .3s;
+						transition: all 0.5s ease;
 						width: 100%;
 
 						.menu-item__active {
@@ -130,6 +131,7 @@
 							border: 1px solid $whiteColor;
 							border-radius: 50%;
 							margin-right: 14px;
+							transition: all .3s ease;
 						}
 
 						&:hover span {
@@ -152,9 +154,10 @@
 					width: 40px;
 					height: 40px;
 					border-radius: 50px;
-					border: 1px solid $whiteColor;
+					border: 1px solid rgb(255, 255, 255, 0.4);
 					margin-right: 20px;
 					cursor: pointer;
+					transition: border .3s;
 
 					a {
 						width: 100%;
@@ -168,6 +171,10 @@
 						width: 16px;
 						height: 18px;
 						fill: $whiteColor;
+					}
+
+					&:hover {
+						border: 1px solid #ffffff;
 					}
 				}
 
